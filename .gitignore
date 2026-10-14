@@ -1,0 +1,19 @@
+# big installers - never commit
+*.tar.gz
+*.exe
+*.msi
+*.zip
+*.rar
+*.7z
+# but keep small winutils dll/exe shims
+!Installation/bin/winutils.exe
+!Installation/bin/hadoop.dll
+!Installation/msvcr120.dll
+# hadoop runtime junk
+logs/
+data/
+tmp/
+*.log
+# java build
+*.class
+!2-4/**/*.class
