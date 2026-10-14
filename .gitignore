@@ -1,10 +1,12 @@
 # big installers - never commit
 *.tar.gz
-*.exe
 *.msi
 *.zip
 *.rar
 *.7z
+# exe: ignore all except the small VC_redist runtime (~18MB)
+*.exe
+!Installation/VC_redist.x64.exe
 # but keep small winutils dll/exe shims
 !Installation/bin/winutils.exe
 !Installation/bin/hadoop.dll
