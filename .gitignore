@@ -4,9 +4,12 @@
 *.zip
 *.rar
 *.7z
-# exe: ignore all except the small VC_redist runtime (~18MB)
+# exe: ignore all except the small tools we keep (~1-18MB)
+# NOTE: hadoop-3.3.6.tar.gz (~730MB) + jdk-8u202 (~211MB) are NOT in git
 *.exe
 !Installation/VC_redist.x64.exe
+!Installation/7z2604-x64.exe
+!Installation/winrar-x64-723.exe
 # but keep small winutils dll/exe shims
 !Installation/bin/winutils.exe
 !Installation/bin/hadoop.dll
